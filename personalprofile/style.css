@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-weight: regular;
+  color:black;
+  background-color:white;
+
+}
+
+.portfolio-container {
+  width: 2000px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 1em;
+  background-color:white;
+}
+
+.hero {
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(12,minmax(10px,1fr));
+  grid-column-gap: 12px;
+}
+
+.hero--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1 / span 5;
+  padding: 50px 0;
+  border-radius: 60px;
+}
+
+.hero--bio {
+  grid-column: 7 / span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: palevioletred;
+  margin-bottom: .600em;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+
+h1:hover{
+  color:black;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+.basic-info {
+  font-size: 1rem;
+  line-height: 150%;
+  padding-block: 1em;
+}
+
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5em;
+  gap: 4em;
+}
+
+.project-thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: .2s ease;
+  transition-property: all;
+  transition-property: transform;
+  border-radius: 20px;
+}
+
+.project-thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.project-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  color: palevioletred;
+  font-weight: bold;
+  transition:0.4s ease-in-out
+}
+.project-title:hover{
+  color: black;
+}
+
+.project-description {
+  padding-block: 2em;
+  line-height: 145%;
+  max-width: 40ch;
+}
+
+footer {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+footer > p:hover {
+  color: pink;
+}
+
+.navbar{
+  width: 650px;
+  height: 80px;
+  margin: auto;
+  border-radius: 10px;  
+  background-color: white;
+}
+
+.icon{
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+
+.logo{
+  color: palevioletred;
+  font-size: 30px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+
+.menu{
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+
+
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li{
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #aaa;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  padding-left: px;
+}
+
+ul li a:hover{
+  color: palevioletred;
+}
+
